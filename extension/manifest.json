@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "SynthShield",
+  "version": "1.0",
+  "description": "Detect likely AI-generated human media",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
